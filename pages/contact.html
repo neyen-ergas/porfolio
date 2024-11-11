@@ -23,6 +23,36 @@
 
     <div class="contact-title">/contacto <hr></div>
 
+    <div class="container-formulario">
+
+        <form id="contactForm">
+        <!-- Nombre -->
+            <label for="nombre" class="palabras-form">Nombre:</label>
+            <input class="formulario-espacios" type="text" id="nombre" name="nombre" required minlength="3" placeholder="      Tu nombre">
+
+        <!-- Email -->
+            <label for="email" class="palabras-form">Email:</label>
+            <input class="formulario-espacios" type="email" id="email" name="email" required placeholder="      Tu email">
+
+        <!-- Motivo de Contacto -->
+            <label for="motivo" class="palabras-form">Motivo de Contacto:</label>
+            <select id="motivo" name="motivo" required class="formulario-espacios">
+                <option value="">      Selecciona una opción</option>
+                <option value="consulta">Consulta</option>
+                <option value="propuesta">Propuesta de Proyecto</option>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="otros">Otros</option>
+            </select>
+
+        <!-- Mensaje -->
+            <label for="mensaje" class="palabras-form">Mensaje:</label>
+            <textarea class="formulario-espacios-mensaje" id="mensaje" name="mensaje" required minlength="10" placeholder="  Escribe tu mensaje"></textarea>
+
+        <!-- Botón de Enviar -->
+            <button class="button-form" type="submit">Enviar</button>
+        </form>
+    </div>
+
     <p class="contact-description">
         Estoy disponible para colaborar en proyectos interesantes y desafiantes. Si deseas ponerte en contacto conmigo para hablar sobre una posible colaboracion, un proyecto, o simplemente para saludar, puedes encontrarme en las plataformas a continuacion. ¡No dudes en enviarme un mensaje!
     </p>
