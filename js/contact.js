@@ -11,7 +11,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); 
     Swal.fire({
         title: '¡Información enviada!',
-        text: 'Gracias por contactarte, respondo a la brevedad!.',
+        text: 'Gracias por contactarte, respondo a la brevedad.',
         icon: 'success',
         confirmButtonText: 'Aceptar'
     }).then(() => {
